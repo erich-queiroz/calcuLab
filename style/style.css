@@ -203,6 +203,9 @@ nav a {
   border-radius: 5px;
   cursor: pointer;
 }
+.percent-button {
+  margin: 10px 0px;
+}
 
 .result {
   text-align: center;

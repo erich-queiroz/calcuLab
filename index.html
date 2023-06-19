@@ -54,23 +54,24 @@
         <h2 class="calc-title">Calculadora de IMC</h2>
         <section class="simple-calc">
             <div class="calc-image">
-                <p class="calc-description">Primeiro, defina o valor total sobre o qual você deseja calcular a porcentagem. Por exemplo, suponha que você queira calcular 20% de um valor de R$ 99,99.
+                <p class="calc-description">O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar a relação entre o peso e a altura de uma pessoa. É uma ferramenta amplamente utilizada para estimar a quantidade de gordura corporal e, assim, avaliar se alguém está dentro de uma faixa considerada saudável.
                     <br><br>
-                <p class="calc-description">Digite o valor total na calculadora. No nosso exemplo, você digitaria "20" no primeiro campo e "99,99" no segundo, correspondente ao valor.</p><br><br>
-                <p class="calc-description">Aperte o botão de Calcular. A calculadora exibirá automaticamente o valor da porcentagem aplicada sobre o valor total. No caso do exemplo, a calculadora exibirá <em>"20% de R$ 99.99 reais é igual a: 79.99 reais."</em></p><br><br>
-                <p class="calc-description">Além disso, a calculadora também irá mostrar o valor do desconto aplicado, que no nosso caso é R$ 19,99. Isso pode ser útil para entender exatamente quanto representa a porcentagem aplicada.</p>                                
+                <p class="calc-description">O IMC é calculado dividindo-se o peso (em quilogramas) pela altura ao quadrado (em metros quadrados). A fórmula do IMC é a seguinte:</p><br>
+                <p class="calc-description" style="text-align: center;"><b>IMC = peso    / altura² </b></em></p><br>
+                <p class="calc-description">No entanto, é importante observar que o IMC possui algumas limitações. Ele não leva em consideração a composição corporal, ou seja, não diferencia entre a massa muscular e a gordura corporal. Portanto, uma pessoa com muita massa muscular pode apresentar um IMC mais alto, mesmo não estando acima do peso.</p>                                
             </div>         
             <div class="calc-text">
                 <div class="form-container">
                     <form id="percentageForm">
-                      <label for="percentageInput">Digite o valor da porcentagem:</label>
+                      <label for="percentageInput">Digite sua altura</label>
                       <input type="number" step="any" id="percentageInput" >            
-                      <label for="amountInput">Digite o valor em reais para ser calculado:</label>
+                      <label for="amountInput">Digite seu Peso</label>
                       <input type="number" step="any" id="amountInput" >            
-                      <input class="percent-button" type="submit" value="Calcular">
+                      <input class="percent-button" id="erroMsg" type="submit" value="Calcular" onclick='alert("Em construção! Manutenções constantes, aguarde!");'>
+                      <input class="percent-button" type="submit" value="Mais informações" onclick='alert("Em construção! Manutenções constantes, aguarde!");'>
                     </form>
-                    <p class="result" id="result"></p>
-                    <i class="fa-solid fa-percent icon"></i>
+                    <p class="result" id="result-imc"></p>
+                    <i class="fa-solid fa-dumbbell"></i>
                   </div>                            
                     </div>
                   </div>              
@@ -82,6 +83,7 @@
         <p>Visite meu <a href="https://github.com/erich-queiroz" target="_blank">Github</a> e <a href="https://linkedin.com/in/erich-queiroz">Linkedin</a> </p>
         <p>Para sugestões, críticas e elogios, envie um e-mail <a href="mailto:erich.q.616@gmail.com">clicando aqui!</a> </p>
     </footer>
+    <script src="./program/app-imc.js"></script>
     <script src="./program/app-percent.js"></script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+// Este código foi retirado de uma calculadora de IMC solo desenvolvida por mim mesmo e está sendo implementado neste site!
+//alert('teste');
+//const error = getElementById('erroMsg');
+//const resultImc = getElementById('result-imc');
+
+//
+
 const form = document.getElementById('percentageForm');
     const percentageInput = document.getElementById('percentageInput');
     const amountInput = document.getElementById('amountInput');
